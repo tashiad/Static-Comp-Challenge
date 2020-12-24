@@ -1,27 +1,163 @@
 @import "./node_modules/normalize.css";
 
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
 .main-container {
   display: grid;
-  height: 100vh;
+  /* height: 100vh; */
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4fr 3fr;
+  grid-template-rows: .5fr 4fr 3fr;
   grid-template-areas:
     "nav"
     "main"
-    "footer"
+    "footer";
 }
 
 nav {
   background: #2B2B2B;
   grid-area: nav;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "username username"
+    "links logo";
+  text-transform: uppercase;
+  padding: 1%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+li {
+  display: inline;
+  padding-right: 5%;
 }
 
 main {
   background: #EFEFEF;
   grid-area: main;
+  padding: 1%;
 }
 
 footer {
-  background: darkgrey;
+  background: #EFEFEF;
   grid-area: footer;
+}
+
+.username {
+  grid-area: username;
+  text-align: right;
+  color: white;
+}
+
+.links {
+  grid-area: links;
+}
+
+.logo {
+  grid-area: logo;
+  text-align: right;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8";
+  grid-gap: 1%;
+}
+
+article {
+  background: white;
+  padding: 5%;
+  max-width: 300px;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3,
+.views {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.date-time {
+  color: #9D9E9F;
+}
+
+.link {
+  background: #EFEFEF;
+  padding: 3% 5% 5% 3%;
+  overflow-wrap: break-word;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.flip-arrow {
+  font-size: 2.5em;
+}
+
+.num {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.blue {
+  color: #29B5FD;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.background-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+
+.card7 {
+  grid-area: card7;
+}
+
+.card8 {
+  grid-area: card8;
 }
