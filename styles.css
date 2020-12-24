@@ -1,0 +1,27 @@
+@import "./node_modules/normalize.css";
+
+.main-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 3fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer"
+}
+
+nav {
+  background: #2B2B2B;
+  grid-area: nav;
+}
+
+main {
+  background: #EFEFEF;
+  grid-area: main;
+}
+
+footer {
+  background: darkgrey;
+  grid-area: footer;
+}
