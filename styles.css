@@ -87,11 +87,12 @@ footer {
 article {
   background: white;
   padding: 5%;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 h2 {
   margin: 0;
+  font-size: 1em;
 }
 
 h3,
@@ -100,13 +101,27 @@ h3,
   margin: 0;
 }
 
+.card-image {
+  position: relative;
+  width: 100%;
+}
+
+.background-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-overlay {
+  position: absolute;
+}
+
 .date-time {
   color: #9D9E9F;
 }
 
 .link {
   background: #EFEFEF;
-  padding: 3% 5% 5% 3%;
+  padding: 3% 12% 5% 3%;
   overflow-wrap: break-word;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -127,11 +142,6 @@ h3,
 
 .card1 {
   grid-area: card1;
-}
-
-.background-image {
-  display: flex;
-  justify-content: space-between;
 }
 
 .card2 {
