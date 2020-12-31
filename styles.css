@@ -70,6 +70,16 @@ footer {
   grid-area: links;
 }
 
+.fa-user-circle {
+  color: white;
+}
+
+.fa-list-ul,
+.fa-user,
+.fa-caret-down {
+  color: #29B5FD;
+}
+
 .playlists-link,
 .personal-link {
   color: #949494;
@@ -167,6 +177,7 @@ h3,
 
 .flip-arrow {
   font-size: 2.5em;
+  color: #4D4D4D;
 }
 
 .num {
