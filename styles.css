@@ -31,7 +31,6 @@ nav {
   grid-template-areas:
     "username username"
     "links logo";
-  text-transform: uppercase;
   padding: 1%;
 }
 
@@ -43,6 +42,7 @@ ul {
 }
 
 li {
+  text-transform: uppercase;
   display: inline;
   padding-right: 5%;
 }
@@ -62,16 +62,26 @@ footer {
   grid-area: username;
   text-align: right;
   color: white;
+  font-size: 0.9em;
+  color: #29B5FD;
 }
 
 .links {
   grid-area: links;
 }
 
+.playlists-link,
+.personal-link {
+  color: #949494;
+}
+
 .logo {
   grid-area: logo;
   text-align: right;
   color: white;
+  font-size: 2.75em;
+  padding: 3%;
+  font-weight: bold;
 }
 
 .cards {
@@ -86,13 +96,24 @@ footer {
 
 article {
   background: white;
-  padding: 5%;
   max-width: 320px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+h1 {
+  color: #4D4D4D;
+  padding-bottom: 2%;
 }
 
 h2 {
   margin: 0;
   font-size: 1em;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 0.75em;
+  padding-top: 5%;
 }
 
 h3,
@@ -101,22 +122,38 @@ h3,
   margin: 0;
 }
 
+.background-image {
+  display: flex;
+  justify-content: flex-start;
+  /* background: black;
+  opacity: .5; */
+}
+
 .card-image {
   position: relative;
   width: 100%;
-}
-
-.background-image {
-  display: flex;
-  justify-content: space-between;
+  height: 155px;
 }
 
 .text-overlay {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
+  padding: 15px;
+}
+
+.views {
+  color: white;
+}
+
+.info {
+  padding: 15px;
+  color: #4D4D4D;
 }
 
 .date-time {
   color: #9D9E9F;
+  font-size: 0.8em;
 }
 
 .link {
@@ -124,7 +161,8 @@ h3,
   padding: 3% 12% 5% 3%;
   overflow-wrap: break-word;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+  font-size: 0.8em;
 }
 
 .flip-arrow {
@@ -132,7 +170,7 @@ h3,
 }
 
 .num {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
 }
 
