@@ -107,7 +107,7 @@ footer {
 article {
   background: white;
   height: 450px;
-  box-shadow: 0 0 5px 2px gray;
+  box-shadow: 0 0 5px 1px gray;
 }
 
 h1 {
@@ -252,4 +252,31 @@ h3,
 
 .blue {
   color: #29B5FD;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* .nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+  } */
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
